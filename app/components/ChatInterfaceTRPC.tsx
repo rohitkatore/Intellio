@@ -254,7 +254,7 @@ export default function ChatInterfaceTRPC({ userId, userName }: ChatInterfacePro
                             <i className="bi bi-chat-dots text-white"></i>
                         </div>
                         <div>
-                            <h5 className="mb-0 text-light">sample</h5>
+                            <h5 className="mb-0 text-light">Intellio</h5>
                             <small className="text-muted">Welcome, {userName}!</small>
                         </div>
                     </div>
@@ -317,9 +317,9 @@ export default function ChatInterfaceTRPC({ userId, userName }: ChatInterfacePro
                                                         src={message.content}
                                                         alt="Generated Image"
                                                         className="img-fluid rounded mb-2"
-                                                        style={{ 
-                                                            maxWidth: '100%', 
-                                                            maxHeight: '400px', 
+                                                        style={{
+                                                            maxWidth: '100%',
+                                                            maxHeight: '400px',
                                                             objectFit: 'contain',
                                                             backgroundColor: '#f8f9fa'
                                                         }}
@@ -337,15 +337,15 @@ export default function ChatInterfaceTRPC({ userId, userName }: ChatInterfacePro
                                                         referrerPolicy="no-referrer"
                                                     />
                                                     {/* Error fallback */}
-                                                    <div 
-                                                        className="alert alert-warning mb-2" 
+                                                    <div
+                                                        className="alert alert-warning mb-2"
                                                         style={{ display: 'none' }}
                                                     >
                                                         <i className="bi bi-exclamation-triangle me-2"></i>
-                                                        Image failed to load. 
-                                                        <a 
-                                                            href={message.content} 
-                                                            target="_blank" 
+                                                        Image failed to load.
+                                                        <a
+                                                            href={message.content}
+                                                            target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="alert-link"
                                                         >
